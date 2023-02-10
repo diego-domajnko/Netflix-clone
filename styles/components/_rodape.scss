@@ -1,0 +1,40 @@
+@import "../abstract/variaveis";
+
+.rodape {
+  padding: 0 50px 20px;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+  color: $cinzaMedio;
+
+  .redes-sociais {
+    display: flex;
+    gap: 16px;
+    color: $branco;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid $cinzaMedio;
+    font-weight: 400;
+  }
+
+  .nav__bar {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .nav__lista {
+    flex-direction: column;
+    gap: 12px;
+
+    .nav__link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .copy {
+    font-size: 12px;
+  }
+}

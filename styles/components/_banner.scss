@@ -1,0 +1,67 @@
+@import "../abstract/variaveis";
+
+.background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9) 5%,
+      rgba(0, 0, 0, 0.2) 20%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../../img/banner\ 1.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 160px 50px 100px;
+}
+
+.banner {
+  margin-bottom: 80px;
+  .banner__conteudo {
+    width: 450px;
+    @include flexColumnCenter;
+    align-items: flex-start;
+    gap: 24px;
+
+    .banner__texto {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .banner__btn {
+      display: flex;
+      gap: 16px;
+
+      .btn {
+        @include flexCenter;
+        gap: 8px;
+        @include btn;
+      }
+
+      .btn__assistir {
+        background-color: $cinzaClaro;
+        color: $preto;
+        width: 150px;
+
+        &:hover {
+          background-color: rgba($color: $cinzaClaro, $alpha: 0.5);
+        }
+      }
+
+      .btn__infos {
+        background-color: rgba($color: $cinzaClaro, $alpha: 0.3);
+        width: 250px;
+
+        &:hover {
+          background-color: rgba($color: $cinzaClaro, $alpha: 0.2);
+        }
+      }
+    }
+  }
+}

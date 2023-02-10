@@ -1,0 +1,51 @@
+@import "../abstract/variaveis";
+
+.cabecalho {
+  @include flexItems;
+  justify-content: space-between;
+  padding: 16px 50px;
+
+  .perfil {
+    @include flexItems;
+    gap: 16px;
+
+    .perfil-menu {
+      @include flexItems;
+      gap: 8px;
+    }
+  }
+}
+
+.nav__bar {
+  @include flexItems;
+  gap: 32px;
+
+  .logo {
+    width: 120px;
+  }
+
+  .nav__lista {
+    display: flex;
+    gap: 16px;
+
+    .nav__link {
+      color: $cinzaMedio;
+      font-size: 14px;
+      transition: 0.5s;
+
+      &:hover {
+        transition: 0.5s;
+        opacity: 0.7;
+      }
+    }
+
+    .nav__link--ativo {
+      font-weight: 600;
+      color: $branco;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

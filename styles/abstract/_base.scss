@@ -1,0 +1,11 @@
+@import "./variaveis";
+
+body {
+  background-color: $preto;
+  color: $branco;
+  font-family: $fonte;
+}
+
+* {
+  box-sizing: border-box;
+}

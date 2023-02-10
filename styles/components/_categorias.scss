@@ -1,0 +1,33 @@
+@import "../abstract/variaveis";
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
+
+  .categoria__titulo {
+    font-size: 18px;
+    color: $cinzaTitulo;
+    font-weight: 700;
+  }
+
+  .categoria__filmes {
+    display: grid;
+    width: 100%;
+
+    .swiper {
+      width: 100%;
+
+      .filme-img {
+        transition: 0.2s;
+
+        &:hover {
+          transition: 0.2s;
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

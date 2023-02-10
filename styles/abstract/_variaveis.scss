@@ -1,0 +1,33 @@
+$fonte: Arial, Helvetica, sans-serif;
+
+$preto: #000000;
+$branco: #ffffff;
+$cinzaClaro: #f8f8f8;
+$cinzaTitulo: #c5c5c5;
+$cinzaMedio: #a1a1a1;
+
+@mixin btn {
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexItems {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@function tamanhoMaxImg() {
+}

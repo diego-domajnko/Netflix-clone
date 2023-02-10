@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Netflix</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="background">
+    <header class="cabecalho">
+      <nav class="nav__bar">
+        <img src="./img/logo 1.svg" alt="Logo da Netflix" class="logo">
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link nav__link--ativo">Início</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Séries</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Filmes</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Bombando</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Minha lista</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="perfil">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bell"></i>
+        <div class="perfil-menu">
+          <img src="./img/user 1.png" alt="Avatar do usuário conectado" class="avatar">
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo">
+      <section class="banner">
+        <div class="banner__conteudo">
+          <img src="./img/poster 1.png" alt="Poster do filme Spiderhead" class="banner__nome-filme">
+          <div class="banner__info">
+            <p class="banner__texto">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.</p>
+          </div>
+          <div class="banner__btn">
+            <a href="#" class="btn btn__assistir"><i class="fa-solid fa-play"></i>Assistir</a>
+            <a href="#" class="btn btn__infos"><i class="fa-solid fa-circle-info"></i>Mais informações</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria minha-lista">
+        <p class="categoria__titulo">Minha lista</p>
+        <div class="categoria__filmes">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/minha-lista-01.png" alt="Poster Bojack Horseman" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-02.png" alt="Poster O Zark" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-03.png" alt="Poster A vizinha da mulher na janela" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-04.png" alt="Poster Breaking Bad" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-05.png" alt="Poster The end of the f***ing world" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-06.png" alt="Poster Boneca Russa"></div>
+              <div class="swiper-slide"><img src="./img/minha-lista-07.png" alt="Poster Pray Away"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria top-10">
+        <p class="categoria__titulo">Em alta</p>
+        <div class="categoria__filmes">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/top-01.png" alt="Poster Bojack Horseman" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/top-02.png" alt="Poster O Zark" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/top-03.png" alt="Poster A vizinha da mulher na janela" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/top-04.png" alt="Poster Breaking Bad" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/top-05.png" alt="Poster The end of the f***ing world" class="filme-img"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria estrangeiros">
+        <p class="categoria__titulo">Séries estrangeiras</p>
+        <div class="categoria__filmes">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/poster_01.png" alt="Poster Bojack Horseman" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_02.png" alt="Poster O Zark" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_03.png" alt="Poster A vizinha da mulher na janela" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_04.png" alt="Poster Breaking Bad" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_05.png" alt="Poster The end of the f***ing world" class="filme-img"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria humor-acido">
+        <p class="categoria__titulo">Séries excêntricas de humor ácido</p>
+        <div class="categoria__filmes">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/poster_06.png" alt="Poster Bojack Horseman" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_08.png" alt="Poster O Zark" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_09.png" alt="Poster A vizinha da mulher na janela" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_14.png" alt="Poster Breaking Bad" class="filme-img"></div>
+              <div class="swiper-slide"><img src="./img/poster_15.png" alt="Poster The end of the f***ing world" class="filme-img"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="rodape">
+      <div class="redes-sociais">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <nav class="nav__bar">
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="" class="nav__link">Idiomas e legendas</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Imprensa</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Privacidade</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Entre em contato</a>
+          </li>
+        </ul>
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="" class="nav__link">Autodescrição</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Relações com investidores</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Avisos legais</a>
+          </li>
+        </ul>
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="" class="nav__link">Centro de ajuda</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Carreiras</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Preferências de cookies</a>
+          </li>
+        </ul>
+        <ul class="nav__lista">
+          <li class="nav__item">
+            <a href="" class="nav__link">Cartão pré-pago</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Termos de uso</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Informações corporativas</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="rodape__btn">
+        <a href="#" class="btn">Código do serviço</a>
+      </div>
+      <div class="copyrigth">
+        <span class="copy">&copy; 1997-2023 Netflix, Inc.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
