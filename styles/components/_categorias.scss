@@ -15,18 +15,20 @@
 
   .categoria__filmes {
     display: grid;
-    width: 100%;
+    width: 100vw;
 
     .swiper {
       width: 100%;
 
       .filme-img {
-        transition: 0.2s;
+        // transition: transform 0.2s;
+        border-radius: 2px;
 
-        &:hover {
-          transition: 0.2s;
-          transform: scale(1.3);
-        }
+        // &:hover {
+        //   position: relative;
+        //   z-index: 1;
+        //   transform: scale(1.5);
+        // }
       }
     }
   }

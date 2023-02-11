@@ -126,17 +126,13 @@ body {
 }
 .categoria .categoria__filmes {
   display: grid;
-  width: 100%;
+  width: 100vw;
 }
 .categoria .categoria__filmes .swiper {
   width: 100%;
 }
 .categoria .categoria__filmes .swiper .filme-img {
-  transition: 0.2s;
-}
-.categoria .categoria__filmes .swiper .filme-img:hover {
-  transition: 0.2s;
-  transform: scale(1.3);
+  border-radius: 2px;
 }
 
 .rodape {
